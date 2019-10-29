@@ -1,5 +1,6 @@
 package  {
 
+	import GZ.Sys.Interface.Context;
 	import GZ.Gfx.Object;
 
 	import GZ.File.RcImg;
@@ -171,16 +172,16 @@ package  {
 			oText.oCurrRange.fClear();
 			oText.oCurrRange.fAdd("Testing: " + nAdd);
 
-			return; //disable
+		//return; //disable
 		
-			/*
-			var _nMouseX : Float = oItf.oWindow.nMouseX - oItf.nHalfFrameWidth;
-			var _nMouseY : Float = oItf.oWindow.nMouseY - oItf.nHalfFrameHeight;
+			
+			var _nMouseX : Float = Context.nMouseX - oItf.nHalfFrameWidth;
+			var _nMouseY : Float = Context.nMouseY - oItf.nHalfFrameHeight;
 
 			//!Updated each frame, parents before
-			TnYaw(_nMouseX / oItf.nHalfFrameWidth / -1.15);
-			TnPitch(_nMouseY / oItf.nHalfFrameHeight / -1.15);
-			*/
+			vRot.nYaw = _nMouseX / oItf.nHalfFrameWidth / -1.15;
+			vRot.nPitch = _nMouseY / oItf.nHalfFrameHeight / -1.15;
+			
 			
 		}
 
