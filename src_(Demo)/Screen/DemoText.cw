@@ -41,11 +41,12 @@ package  {
 			var _oFont : RcFont = new RcFont( "Exe|Rc/Fonts/ProggyTiny.ttf", 10);
 		//	var _oFont : RcFont = new RcFont("c:/extra_fonts/DroidSans.ttf");
 		
-		
-		
-		
 			Debug.fTrace("--------");
 			_oFont.fCpuLoad();
+			if(Context.oItf.bGpuDraw){
+				_oFont.fSetGpuTexLayer(Attribute_Quad.oTexture);
+				_oFont.fGpuLoad();
+			}
 			
 			oImg = new Img(this, 100.0, 100.0, _oFont, true);
 			
