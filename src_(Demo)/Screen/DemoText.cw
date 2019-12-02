@@ -130,9 +130,10 @@ package  {
 		
 		oTitle = new Text(this, _oFont,    oItf.nHalfFrameWidth * -1 + 40.0,   oItf.nHalfFrameHeight* -1 +  70.0, "[GroundZero Engine]");
 
-		oTitle.vColor.nRed = 0.0;
-		oTitle.vColor.nBlue = 0.0;
-		oTitle.vColor.nGreen = 0.0;
+		
+		oTitle.vColor.nRed = 0.1;
+		oTitle.vColor.nBlue = 0.2;
+		oTitle.vColor.nGreen = 0.8;
 		//oTitle.vSize.nHeight = 2.0;
 	//	oTitle.vSize.nWidth = 2.0;
 		
@@ -173,12 +174,12 @@ package  {
 			
 			var _nTest : Int = 0;
 			*/
-			/*
-			oText2 = new Text(this, _oFont, 0.0, 0.0, "Ground Zero");
-			oText2.vSize.nWidth = 2.0;
-			oText2.vSize.nHeight = 2.0;
+			
+			oText2 = new Text(this, _oFont, 0.0, -30.0, "<Pixel Perfect Font!>");
+
+			oText2.vColor.nRed = 0.0;
 			oText2.vColor.nBlue = 1.0;
-			*/
+			oText2.vColor.nGreen = 0.0;
 		}	
 
 
