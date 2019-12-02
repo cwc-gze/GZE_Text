@@ -16,6 +16,7 @@ package  {
 
 	import GZ.Gfx.Clip.Img;
 	import GZ.Base.Quaternion;
+	import GZ.Gpu.ShaderModel.AtModel.Attribute_Quad;
 	
 
 	/**
