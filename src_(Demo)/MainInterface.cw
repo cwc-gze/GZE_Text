@@ -15,13 +15,13 @@ package  {
 	import GZ.Gfx.Clip;
 	
 	import GZ.File.RcImg;
-	import Demo.Screen.DemoRoll;
+	//import Demo.Screen.DemoRoll;
 	//import Demo.Screen.FpsCount;
 	import Demo.Screen.DemoText;
 	
 	import GZ.Gpu.ShaderModel.GzModel.GzShModel;
 	import GZ.Gpu.ShaderModel.GzModel.GzShModel_Minimal;
-	import GZ.Gpu.ShaderModel.GzModel.GzShModel_Quad;
+	import GZ.Gpu.ShaderModel.GzModel.GzShModel_Quad.GzShModel_Quad;
 	import GZ.Gpu.ShaderModel.GzModel.GzShModel_Raymarching;
 	import GZ.Gpu.ShaderModel.GzModel.GzShModel_Shadertoy;
 	
@@ -33,7 +33,7 @@ package  {
 	import Demo.Screen.DemoArrow;
 	*/
 	
- 	import Demo.Screen.DemoArrow;
+ //	import Demo.Screen.DemoArrow;
 	
 	import GZ.Base.Math.Math;
 	
@@ -58,7 +58,7 @@ package  {
 		use Window.eWinBorder;
 		
 		public var oDemo : Clip;
-		public var aDemoArrow : Array<DemoArrow>;
+		//public var aDemoArrow : Array<DemoArrow>;
 		public	var oImg : Img;
 	//	public var oGzShModel : GzShModel;
 		
