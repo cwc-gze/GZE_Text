@@ -53,7 +53,7 @@ package  {
 
 			
 			if(Context.oItf.bGpuDraw){
-				_oFont.fSetGpuTexLayer(Attribute_Quad.oTexture);
+				_oFont.fSetGpuTexLayer(Attribute_Quad.oTexFont);
 				_oFont.fGpuLoad();
 			}
 			
