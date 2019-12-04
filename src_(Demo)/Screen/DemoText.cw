@@ -16,6 +16,7 @@ package  {
 
 	import GZ.Gfx.Clip.Img;
 	import GZ.Gfx.Vector.Line;
+	import GZ.Gfx.Vector.HalfLine;
 	import GZ.Base.Quaternion;
 	import GZ.Gpu.ShaderModel.AtModel.Attribute_Quad;
 	import GZ.Base.PtA;
@@ -32,7 +33,7 @@ package  {
 		public var oTitle : Text;
 		public var nAdd : Int = 0;
 		
-		public var oLine : Line;
+		public var oLine : HalfLine;
 		
 		
 		
@@ -104,10 +105,12 @@ package  {
 			oText2.vColor.nBlue = 1.0;
 			oText2.vColor.nGreen = 0.0;
 			
+
+			
+			oLine = new HalfLine(this, new PtA(0 ,0), new PtA(200 , 200));
 			
 			
 			
-			oLine = new Line(this, new PtA(0 ,0), new PtA(200 , 200));
 			
 			
 		}	
