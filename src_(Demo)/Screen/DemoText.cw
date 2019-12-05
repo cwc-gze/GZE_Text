@@ -15,6 +15,7 @@ package  {
 	import GZ.Base.Math.Math;
 
 	import GZ.Gfx.Clip.Img;
+	import GZ.Gfx.Vector.VectorShape;
 	import GZ.Gfx.Vector.Line;
 	import GZ.Gfx.Vector.HalfLine;
 	import GZ.Base.Quaternion;
@@ -33,7 +34,8 @@ package  {
 		public var oTitle : Text;
 		public var nAdd : Int = 0;
 		
-		public var oLine : HalfLine;
+		public var oLine : Line;
+		public var oVectorShape : VectorShape;
 		
 		
 		
@@ -107,9 +109,9 @@ package  {
 			
 
 			
-			oLine = new HalfLine(this, new PtA(0 ,0), new PtA(200 , 200));
+			//oLine = new Line(this, new PtA(0 ,0), new PtA(200 , 200));
 			
-			
+			oVectorShape = new VectorShape(this, 10);
 			
 			
 			
