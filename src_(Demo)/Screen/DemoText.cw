@@ -111,7 +111,7 @@ package  {
 			
 			//oLine = new Line(this, new PtA(0 ,0), new PtA(200 , 200));
 			
-			oVectorShape = new VectorShape(this, 10);
+			oVectorShape = new VectorShape(this, 1.5);
 			
 			
 			
