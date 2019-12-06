@@ -15,6 +15,7 @@ package  {
 	import GZ.Base.Math.Math;
 
 	import GZ.Gfx.Clip.Img;
+	import GZ.Gfx.Clip.ButtonImg;
 	import GZ.Gfx.Vector.VectorShape;
 	import GZ.Gfx.Vector.Line;
 	import GZ.Gfx.Vector.HalfLine;
@@ -34,10 +35,12 @@ package  {
 		public var oTitle : Text;
 		public var nAdd : Int = 0;
 		
+		
+		
 		public var oLine : Line;
 		public var oVectorShape : VectorShape;
 		
-		
+		public var oButton : ButtonImg;
 		
 		
 		
@@ -108,11 +111,19 @@ package  {
 			oText2.vColor.nGreen = 0.0;
 			
 
-			
+	/////////////////////////////////////////////////////////////////////////////////////////////				
 			//oLine = new Line(this, new PtA(0 ,0), new PtA(200 , 200));
+			oVectorShape = new VectorShape(this, 1.0);
+						
+			var _oImgRc : RcImg = new RcImg( "Exe|Rc/SimpleButton.png");
+				_oImgRc.fCpuLoad();
+			if(Context.oItf.bGpuDraw){
+				_oImgRc.fSetGpuTexLayer(Attribute_Quad.oTexture);
 			
-			oVectorShape = new VectorShape(this, 1.5);
+				_oImgRc.fGpuLoad();
+			}
 			
+			oButton = new ButtonImg(this, 0, 0, _oImgRc);
 			
 			
 		}	
