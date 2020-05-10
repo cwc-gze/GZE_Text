@@ -22,7 +22,9 @@ package  {
 	import GZ.Base.Quaternion;
 	import GZ.Gpu.ShaderModel.AtModel.Attribute_Quad;
 	import GZ.Base.PtA;
-
+	import GZ.Gfx.Vector.Box;
+	import Demo.Screen.LigthObj;
+	
 	/**
 	 * @author Maeiky
 	 */
@@ -36,13 +38,14 @@ package  {
 		public var nAdd : Int = 0;
 		
 		
+		public var oLigthObj : LigthObj;
 		
 		public var oLine : Line;
 		public var oVectorShape : VectorShape;
 		
 		public var oButton : ButtonImg;
 		
-		
+		public	var oBox : Box ;
 		
 		public function DemoText( _oParent : Root ):Void {
 			Clip(_oParent, _oParent.oItf.nHalfFrameWidth,  _oParent.oItf.nHalfFrameHeight);
@@ -113,7 +116,7 @@ package  {
 
 	/////////////////////////////////////////////////////////////////////////////////////////////				
 			//oLine = new Line(this, new PtA(0 ,0), new PtA(200 , 200));
-			oVectorShape = new VectorShape(this, 1.0);
+	//		oVectorShape = new VectorShape(this, 5.0);
 						
 			var _oImgRc : RcImg = new RcImg( "Exe|Rc/SimpleButton.png");
 				_oImgRc.fCpuLoad();
@@ -123,9 +126,14 @@ package  {
 				_oImgRc.fGpuLoad();
 			}
 			
-			oButton = new ButtonImg(this, 0, 0, _oImgRc);
+			//	oButton = new ButtonImg(this, 0, 0, _oImgRc);
 			
 			
+			
+			oBox = new Box( 0,0,  355,255,  1);
+			
+			
+			//oLigthObj = new LigthObj();
 		}	
 
 		
